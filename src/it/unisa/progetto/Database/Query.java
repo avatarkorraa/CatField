@@ -4,7 +4,17 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+/**
+ * La classe Query fornisce metodi per eseguire diverse query sul database.
+ */
+
 public class Query {
+
+    /**
+     * Stampa i codici dei gatti di una determinata specie.
+     *
+     * @param specie la specie dei gatti da cercare.
+     */
 
     public static void printGatti(String specie) {
 
@@ -30,6 +40,13 @@ public class Query {
         }
 
     }
+
+    /**
+     * Stampa i dettagli dei gatti visitati in una determinata data.
+     *
+     * @param data la data delle visite da cercare.
+     * @throws SQLException se si verifica un errore SQL.
+     */
 
     public static void printGattiVisita(String data)
         throws SQLException{
@@ -60,6 +77,12 @@ public class Query {
 
     }
 
+    /**
+     * Stampa la somma di tutte le quote dei buoni.
+     *
+     * @throws SQLException se si verifica un errore SQL.
+     */
+
     public static void printSommaBuoni()
             throws SQLException {
 
@@ -84,6 +107,12 @@ public class Query {
         }
 
     }
+
+    /**
+     * Stampa il numero di visite per ogni gatto nel database.
+     *
+     * @throws SQLException se si verifica un errore SQL.
+     */
 
     public static void printGattoVisite()
             throws SQLException {
@@ -114,6 +143,13 @@ public class Query {
 
     }
 
+    /**
+     * Stampa il numero di dipendenti con meno di 40 ore e la somma degli stipendi per quelle ore.
+     *
+     * @param ora il limite massimo di ore lavorative.
+     * @throws SQLException se si verifica un errore SQL.
+     */
+
     public static void printSommaStipendiPerOre(int ora)
             throws SQLException {
 
@@ -143,6 +179,15 @@ public class Query {
         }
 
     }
+
+    /**
+     * Stampa il numero di dipendenti, il numero di ore e la somma degli stipendi
+     * per ore lavorative superiori a un certo limite e con una quota oraria massima superiore a un certo valore.
+     *
+     * @param ora   il limite minimo di ore lavorative.
+     * @param quota il limite minimo di quota oraria.
+     * @throws SQLException se si verifica un errore SQL.
+     */
 
     public static void printStipendiPerOreEQuotaOraria(int ora, int quota)
             throws SQLException {
@@ -178,6 +223,12 @@ public class Query {
 
     }
 
+    /**
+     * Stampa le matricole dei volontari che non hanno adozioni associate.
+     *
+     * @throws SQLException se si verifica un errore SQL.
+     */
+
     public static void printVolontariCheNonHannoAdozioni()
             throws SQLException {
 
@@ -205,6 +256,12 @@ public class Query {
         }
 
     }
+
+    /**
+     * Stampa i codici dei gatti che sono stati visitati da almeno un veterinario.
+     *
+     * @throws SQLException se si verifica un errore SQL.
+     */
 
     public static void printGattiCheSonoStatiVisitati()
             throws SQLException {
@@ -234,8 +291,19 @@ public class Query {
 
     }
 
-    public static void insertGatto(String ciu, int eta, String specie, String genere, String matricolaDip,
-        String matricolaVol){
+    /**
+     * Inserire un nuovo gatto nel database.
+     *
+     * @param ciu           il codice identificativo unico del gatto.
+     * @param eta           l'età del gatto.
+     * @param specie        la specie del gatto.
+     * @param genere        il genere del gatto.
+     * @param matricolaDip  la matricola del dipendente associato al gatto.
+     * @param matricolaVol  la matricola del volontario associato al gatto.
+     */
+
+    public static void insertGatto(String ciu, int eta, String specie,
+                                    String genere, String matricolaDip,String matricolaVol){
 
         try {
             Statement stmn = Connector.getConnection().createStatement();
@@ -252,6 +320,10 @@ public class Query {
         }
 
     }
+
+    /**
+     * Stampa i codici dei gatti nel database.
+     */
 
     public static void stampaGatti(){
 
@@ -277,6 +349,13 @@ public class Query {
 
     }
 
+    /**
+     * Modifica la data di adozione di un gatto nel database.
+     *
+     * @param dataAdozione la nuova data di adozione.
+     * @param ciu          il codice identificativo unico del gatto da modificare.
+     */
+
     public static void modificaGatto(String dataAdozione, String ciu){
 
         try {
@@ -295,6 +374,12 @@ public class Query {
         }
 
     }
+
+    /**
+     * Cancella un gatto dal database.
+     *
+     * @param ciu il codice identificativo unico del gatto da eliminare.
+     */
 
     public static void cancellaGatto(String ciu){
 
