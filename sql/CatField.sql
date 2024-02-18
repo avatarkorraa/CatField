@@ -1,6 +1,6 @@
-drop database if exists RifugioGatti;
-create database RifugioGatti;
-use RifugioGatti;
+drop database if exists catfield;
+create database catfield;
+use catfield;
 
 create table Dipendente(
 
