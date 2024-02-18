@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"it.unisa.progetto.Database","l":"Connector"},{"p":"it.unisa.progetto.Database","l":"Query"}];updateSearchResults();
