@@ -37,3 +37,7 @@ Per eseguire correttamente il progetto CatField, seguire i passaggi seguenti:
 ## Utilizzo
 
 Dopo aver configurato correttamente l'applicazione, è possibile eseguire `Main.java` per avviare l'applicazione. Seguire le istruzioni fornite nell'interfaccia utente per registrare nuovi gatti, aggiornare le informazioni esistenti e gestire l'archivio del gattile.
+
+## Documentazione
+
+Potete trovare la JavaDoc completa a questo link: <a href="https://avatarkorraa.github.io/CatField/">JAVADOC</a>.
