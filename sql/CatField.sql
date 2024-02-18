@@ -37,7 +37,7 @@ create table Gatto(
     codiceidentificativounico varchar(100) primary key,
     dataAdozione date,
     età int not null,
-    razza varchar(100) not null,
+    specie varchar(100) not null,
     genere varchar(100) not null,
     matricolaDipendente varchar(100) not null,
     matricolaVolontario varchar(100) not null,
