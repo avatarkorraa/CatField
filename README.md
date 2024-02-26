@@ -34,6 +34,8 @@ Per eseguire correttamente il progetto CatField, seguire i passaggi seguenti:
 3. Creare un database MySQL chiamato `catfield` utilizzando lo script fornito in `sql/`.
 4. Modificare le credenziali di accesso al database nel file di configurazione JDBC (`Connector.java`) con le proprie informazioni di accesso al database MySQL.
 
+(ESEMPIO STRINGA JDBC -> `jdbc:mysql://localhost:3306/catfield?CREDENZIALI`)
+
 ## Utilizzo
 
 Dopo aver configurato correttamente l'applicazione, è possibile eseguire `Main.java` per avviare l'applicazione. Seguire le istruzioni fornite nell'interfaccia utente per registrare nuovi gatti, aggiornare le informazioni esistenti e gestire l'archivio del gattile.
