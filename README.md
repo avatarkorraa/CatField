@@ -1,3 +1,5 @@
+<p align="center"><img src="https://i.postimg.cc/hjJStH5d/3727e332-1e83-4bb0-af75-82abefd0a864.jpg" height="400"></p>
+
 # CatField
 
 CatField è un progetto Java che implementa un sistema di gestione per un gattile utilizzando il linguaggio di programmazione Java, la tecnologia JDBC per l'accesso al database MySQL.
